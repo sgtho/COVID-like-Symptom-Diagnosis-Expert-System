@@ -20,6 +20,22 @@ The system follows a classic expert system structure:
 4. **User Interface:**
    All user interactions (input/output), guiding the interview and presenting advice.
 
+## Directory Structure
+
+Once extracted, the main files typically include:
+
+```
+MMA/
+├── knowledge_base.pl       # Medical/domain rules and symptom definitions
+├── working_memory.pl       # Dynamic predicates for session memory
+├── inference_engine.pl     # Core reasoning and flow logic
+├── ui.pl                   # User interaction (CLI, input/output)
+├── main.pl (optional)      # Main entry point module for the COVID-like Diagnosis Expert System.
+├── README.md               # This documentation
+```
+
+> **Tip:** File names may differ. Please refer to the extracted directory for exact names.
+
 ## Files
 
 * **knowledge\_base.pl** – Medical knowledge and rule definitions.
@@ -41,7 +57,7 @@ The system follows a classic expert system structure:
 
 You have two ways to start the system:
 
-### **A. Modular Load and Run**
+### **A. Requirement, Modular Load, and Run**
 
 1. **Install [SWI-Prolog](https://www.swi-prolog.org/)** (if not already installed).
 
@@ -84,7 +100,7 @@ You have two ways to start the system:
 
 *Note: If your entry point file has a different name, substitute `main.pl` and `main` with the correct file and predicate.*
 
-## Customization
+## Customisation
 
 * To add or change symptoms, update `knowledge_base.pl`.
 * To change question flow or reasoning, edit `inference_engine.pl`.
@@ -105,4 +121,10 @@ You have two ways to start the system:
 
 ---
 
-Feel free to personalize, extend, or add more instructions as needed!
+Feel free to personalise, extend, or add more instructions as needed!
+
+
+
+
+
+

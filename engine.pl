@@ -76,7 +76,7 @@ common_symptom_present :-
     wm:has_symptom(persistent_dry_cough);
     wm:has_symptom(tiredness).
 
-%--- Probability Level Reasoning (COVID-like infection) ---
+%--- Probability Level Reasoning (Virus-like infection) ---
 % These rules combine exposure, incubation, and symptoms to produce a risk level.
 
 % High probability: recent exposure, right incubation, and any key symptom
@@ -111,7 +111,7 @@ probability_level(none) :-
 %--- Probability Assessment Output ---
 diagnose_probability :-
     probability_level(Level),
-    format('Your likelihood of COVID-like infection is: ~w~n', [Level]),
+    format('Your likelihood of Virus-like infection is: ~w~n', [Level]),
     advise_based_on_level(Level).
 
 advise_based_on_level(high) :-
@@ -121,7 +121,7 @@ advise_based_on_level(medium) :-
     write('MODERATE probability: Monitor your symptoms closely, limit contact with others, and consider contacting a healthcare provider.'), nl.
 
 advise_based_on_level(low) :-
-    write('LOW probability: Your symptoms are less likely due to COVID-like illness, but stay cautious and monitor your health.'), nl.
+    write('LOW probability: Your symptoms are less likely due to Virus-like illness, but stay cautious and monitor your health.'), nl.
 
 advise_based_on_level(none) :-
     write('NO symptoms reported: Risk of infection appears low at this time. Stay vigilant if you develop symptoms later.'), nl.

@@ -1,7 +1,7 @@
-# COVID-like-Symptom-Diagnosis-Expert-System (Prolog)
+# Virus-Symptom-Diagnosis-Expert-System (Prolog)
 This is a Mid-Module Assignment of CSCK502 Reasoning and Intelligence Systems June 2025
 
-This project is an **interactive expert system for preliminary diagnosis and guidance related to COVID-like symptoms**, implemented in SWI-Prolog.
+This project is an **interactive expert system for preliminary diagnosis and guidance related to virus-like symptoms**, implemented in SWI-Prolog.
 The system simulates a clinical interview, efficiently collecting patient data, reasoning about risk and symptom combinations, and giving medical recommendations and prevention tips.
 
 ## Architecture
@@ -30,7 +30,7 @@ MMA/
 ├── working_memory.pl       # Dynamic predicates for session memory
 ├── inference_engine.pl     # Core reasoning and flow logic
 ├── ui.pl                   # User interaction (CLI, input/output)
-├── main.pl (optional)      # Main entry point module for the COVID-like Diagnosis Expert System.
+├── main.pl (optional)      # Main entry point module for the virus-like Diagnosis Expert System.
 ├── README.md               # This documentation
 ```
 

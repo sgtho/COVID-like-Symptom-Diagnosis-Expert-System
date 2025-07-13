@@ -104,6 +104,10 @@ probability_level(low) :-
     \+ probability_level(high),
     \+ probability_level(medium).
 
+probability_level(low) :-
+    wm:patient_exposure(true),
+    \+ wm:has_symptom(_).  % No symptoms reported
+
 % No symptoms at all: special case
 probability_level(none) :-
     \+ wm:has_symptom(_).
@@ -152,6 +156,12 @@ diagnose :-
 diagnose :- wm:has_symptom(runny_nose), !,
     write('Runny nose detected. Even if mild, stay home to avoid spreading to others via droplets or surfaces.'), nl,
     write('Practice strict hand hygiene and disinfect surfaces regularly.'), nl.
+
+diagnose :-
+    wm:patient_exposure(true),
+    \+ wm:has_symptom(_), !,
+    write('You do not have symptoms, but your recent exposure history should be monitored.'), nl,
+    write('Continue to self-monitor and follow health authority advice for people with recent contact.'), nl.
 
 diagnose :-
     write('No key symptoms detected.'), nl.

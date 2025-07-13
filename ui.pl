@@ -53,8 +53,9 @@ map_conditions([_|T], CT)     :- map_conditions(T,CT).
 
 %--- Ask About Duration of Symptoms ---
 ask_duration :-
-    write('How many days have you felt unwell? (1–14)'), nl,
+    write('How many days have you felt unwell?'), nl,
     write('The incubation period can be 1–14 days. Transmission is possible even before symptoms.'), nl,
+    write('If you do not feel unwell, please enter 0.'), nl,
     read(Days), assertz(wm:exposure_days_ago(Days)), nl.
 
 %--- Ask About Exposure ---

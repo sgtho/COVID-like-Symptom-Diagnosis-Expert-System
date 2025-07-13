@@ -85,7 +85,7 @@ You have two ways to start the system:
 2. **Load the main module:**
 
    ```prolog
-   ?- use_module('main.pl').
+   ?- use_module('~YOURFULLPATH/main.pl').
    ```
 
    *(Or provide the full path if not in the current directory.)*

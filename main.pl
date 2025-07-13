@@ -1,7 +1,7 @@
 /**************************************************************************
  * main.pl
  * ------------------------------------------------------------------------
- * Main entry point module for the COVID-like Diagnosis Expert System.
+ * Main entry point module for the Virus-like Diagnosis Expert System.
  *
  * This file acts as the top-level "controller" for the entire system.
  * - Loads all other component modules (Knowledge Base, Working Memory,

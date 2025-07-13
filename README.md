@@ -1,9 +1,5 @@
-# COVID-like-Symptom-Diagnosis-Expert-System
+# COVID-like-Symptom-Diagnosis-Expert-System (Prolog)
 This is a Mid-Module Assignment of CSCK502 Reasoning and Intelligence Systems June 2025
-
----
-
-# COVID-like Symptom Diagnosis Expert System (Prolog)
 
 This project is an **interactive expert system for preliminary diagnosis and guidance related to COVID-like symptoms**, implemented in SWI-Prolog.
 The system simulates a clinical interview, efficiently collecting patient data, reasoning about risk and symptom combinations, and giving medical recommendations and prevention tips.
